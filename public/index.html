@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <title>IEEE Club CGC COE Landran</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="font-[Montserrat] font-normal">
+    <header class="bg-black/40">
+        <nav class="flex justify-between items-center w-[92%] mx-auto">
+            <div>
+                <img class="h-20 cursor-pointer" src="/assets/IEEE_COE.png" alt="IEEE SB LOGO">
+            </div>
+            <div
+                class="nav-links duration-500 md:static absolute md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5 justify-center">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap- gap-8">
+                    <li>
+                        <a class="hover:text-gray-500 text-md" href="#">Home</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500 text-md" href="events.html">Events</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500 text-md" href="#">About</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500 text-md" href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-6">
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+            </div>
+        </nav>
+    </header>
+    <main class="bg-black/10 flex flex-col justify-center min-h-[90vh] items-center">
+        <section class="w-[80%] mx-auto py-20 ">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-10">
+                <div class="p-10">
+                    <h2 class="text-6xl font-bold text-white">Advancing Technology for Humanity</h2>
+                    <p class="text-white text-2xl mt-5">IEEE clubs, or student branches (SBs), are groups of IEEE
+                        members who meet to learn about and share interest in a particular area of technology. IEEE
+                        stands for Institute of Electrical and Electronics Engineers. </p>
+                    <button class="bg-[#2e7eb0] text-3xl rounded-full text-black px-5 py-2 mt-5">Join Us</button>
+                </div>
+
+                <div class="margin-">
+                    <img class="w-[60rem]" src="assets/ieeeHero.png" alt="IEEE SB LOGO">
+                </div>
+
+        </section>
+
+
+    </main>
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script>
+        const navLinks = document.querySelector('.nav-links')
+        function onToggleMenu(e) {
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navLinks.classList.toggle('top-[9%]')
+        }
+    </script>
+</body>
+
+</html>
