@@ -1,27 +1,37 @@
 * {
     color: aliceblue;
-}
-
-body {
-    background-image: url('/assets/bg_2.png');
-    align-items: center;
-    justify-content: center;
-    background-size: cover;
-    /* Ensures the image covers the entire screen */
-    background-position: center;
-    /* Centers the image */
-    background-attachment: fixed;
-    /* Keeps the image in place while scrolling */
     margin: 0;
-    /* Removes default body margin */
-    height: 100vh;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-#events{
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden; /* Prevents horizontal scroll */
+}
+
+body::before {
+    content: "";
+    position: fixed; /* Keeps background in place */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url('/assets/bg_2.png') no-repeat center center;
+    background-size: cover; /* Covers the screen */
+    z-index: -1; /* Pushes background behind content */
+}
+
+
+
+#events {
     /* translucent white background */
     background-color: rgba(255, 255, 255, 0.5);
     padding: 20px;
     border-radius: 10px;
     margin-top: 20px;
-    
+
 }

@@ -1,0 +1,108 @@
+@media only screen and (max-width: 600px) {
+
+  .eventh {
+    margin-top: 1rem;
+  }
+
+  #event-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .active {
+    margin: 1rem;
+    flex-direction: column-reverse;
+    text-align: center;
+    border-radius: 1rem;
+  }
+
+  .active img {
+    width: 100%;
+    border-radius: 1rem;
+  }
+
+  .active h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .active .description {
+    font-size: 1rem;
+    text-align: justify;
+    padding: 0%;
+    margin-bottom: 0;
+  }
+
+  .active .date_venue {
+    gap: 0;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+  .active .venue{
+    font-size: 1rem;
+  }
+  .active .logo{
+    width: 1.7rem;
+  }
+
+  /* ))))))))))))))))))))))))))))))))))))))))))))))))))))) */
+
+  .inactive{
+    margin: 0.5rem;
+    width: 100%;
+    flex-direction: row;
+    text-align: left;
+    padding: 0.5rem;
+    border-radius: 1rem;
+  }
+  .inactive .thumbnail{
+    width: 40%;
+    margin-right: 0.5rem;
+    margin-bottom: 0;
+    height: 100%;
+  }
+  .inactive img{
+    height: 6rem;
+    border-radius: 1rem;
+    /* rotate: 90deg; */
+    object-fit: fill;
+  }
+  .inactive h1{
+    font-size: 1.2rem;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  .inactive .date img{
+    display: none;
+  }
+  .inactive .date{
+      
+    font-size: 1rem;
+  }
+  .inactive .venue{
+    display: none;
+  }
+  .inactive .description{
+    font-size: 0.7rem;
+    text-align: left;
+    width: 100%;
+    height: 4rem;
+    padding: 0%;
+    margin-bottom: 0;
+    text-wrap: block;
+    overflow: hidden;         /* Hides overflowed text */
+    text-overflow: ellipsis;
+    display: block;
+  }
+  .inactive button{
+    font-size: 0.7rem;
+    padding: 0.3rem 1rem;
+    margin-top: 0.5rem;
+  }
+  
+}

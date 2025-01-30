@@ -1,0 +1,111 @@
+#event-container{
+    padding-left: 6rem;
+    padding-right: 6rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.eventh{
+    margin-left: 6rem;
+    margin-top: 4rem;
+}
+
+.active{
+    background: #485aa898;
+    margin: 2rem;
+    border-radius: 2rem;
+    display: flex;
+    padding: 1rem;
+}
+.active img{
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+.active .description{
+    padding: 1rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.active text{
+    text-align: left;
+}
+.active h1{
+    font-size: 4rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 1rem;
+
+}
+.active .logo{
+    width: 2.5rem;
+}
+.active .date{
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+.active button, .inactive button{
+    background: #f1f1f1;
+    color: #000;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+.active button:hover, .inactive button:hover{
+    background: #000;
+    color: #f1f1f1;
+}
+
+.inactive{
+    background: #485aa898;
+    margin: 2rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 25%;
+}
+.inactive .date_venue{
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.inactive .date, .venue{
+    gap: 1rem;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    font-size: 1.2rem;
+    font-size: 1.5rem;
+}
+
+.inactive .thumbnail {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+.inactive .logo{
+    width: 2rem;
+}
+.inactive h1{
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
